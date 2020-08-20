@@ -43,6 +43,23 @@ address {
   font-style: normal;
 }
 
+/* убирает маркеры списков */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* убирает подчеркивание у ссылок */
+a {
+  text-decoration: none;
+}
+
+button:hover {
+  outline: none;
+}
+/* <--------Общие стили----------> */
+
 .transition {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -83,18 +100,6 @@ address {
 
 .accent {
   color: var(--accent-color);
-}
-
-/* убирает маркеры списков */
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* убирает подчеркивание у ссылок */
-a {
-  text-decoration: none;
 }
 
 /* Page header */
@@ -518,6 +523,7 @@ a {
   text-align: center;
   letter-spacing: 0.06em;
   text-align: center;
+  outline: none;
 
   cursor: pointer;
 }
@@ -672,12 +678,16 @@ a {
   box-sizing: border-box;
 }
 
+.footer-subscribe input:hover {
+  outline: none;
+}
 .join-telegram {
   width: 24px;
   height: 24px;
   fill: var(--button-text-color);
 
   margin-left: 10px;
+  outline: none;
 }
 
 .footer-join {
